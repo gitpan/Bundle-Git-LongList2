@@ -3,7 +3,7 @@ use ExtUtils::MakeMaker;
 WriteMakefile (
     'NAME'              => 'Bundle::Git::LongList2',
     'ABSTRACT'          => 'Installs git modules',
-    'VERSION'           => '0.01',
+    'VERSION'           => '0.02',
     'PREREQ_PM'         => {},
                                                         
     'dist'              => {'COMPRESS' => 'gzip -9f', 

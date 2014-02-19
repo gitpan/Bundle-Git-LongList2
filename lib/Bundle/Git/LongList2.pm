@@ -1,7 +1,7 @@
 package Bundle::Git::LongList2;
 
 use 5.005;
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 1;
 
@@ -9,7 +9,7 @@ __END__
 
 =head1 NAME
 
-Bundle::Git::LongList1 - 
+Bundle::Git::LongList2 - 
   Perl extension for installing all git modules
 
 =head1 SYNOPSIS
@@ -18,7 +18,7 @@ Bundle::Git::LongList1 -
 
 =head1 DESCRIPTION
 
-Bundle::Git::LongList1 is the first part of three parts.
+Bundle::Git::LongList2 is the second part of three parts.
   It's based on the long list as given by 01modules.index.
  
 =head1 CONTENTS
@@ -759,7 +759,7 @@ Git::SVNReplay
 
 =head1 AUTHOR
 
-Version 0.01 Kevin W. Henwood, <Khen1950fx@yahoo.com>
+Version 0.02 Kevin W. Henwood, <Khen1950fx@yahoo.com>
 
 =head1 COPYRIGHT AND LICENSE
 
