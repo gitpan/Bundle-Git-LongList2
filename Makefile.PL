@@ -1,22 +1,12 @@
+use 5.005;
 use ExtUtils::MakeMaker;
-
-WriteMakefile (
-    'NAME'              => 'Bundle::Git::LongList2',
-    'ABSTRACT'          => 'Installs git modules',
-    'VERSION'           => '0.02',
-    'PREREQ_PM'         => {},
-                                                        
-    'dist'              => {'COMPRESS' => 'gzip -9f', 
-                            'SUFFIX'   => '.gz', },
-    (
-        $] >= 5.005     
-            ? ( AUTHOR  => 'Kevin W. Henwood <Khen1950fx@aol.com>') 
-            : ()
-     ),
-     (
-            ExtUtils::MakeMaker->VERSION() gt '5.50' 
-                ?  ('LICENSE'  => 'perl')         
-                : ()
-        ),
-
-);  
+# See lib/ExtUtils/MakeMaker.pm for details of how to influence
+# the contents of the Makefile that is written.
+WriteMakefile(
+    NAME              => 'Bundle::Git::LongList2',
+    VERSION_FROM      => 'lib/Bundle/Git/LongList2.pm', # finds $VERSION
+    PREREQ_PM         => {'Test'        =>  0, }, # e.g., Module::Name => 1.1
+    ($] >= 5.005 ?     ## Add these new keywords supported since 5.005
+      (ABSTRACT_FROM  => 'lib/Bundle/Git/LongList2.pm', # retrieve abstract from module
+       AUTHOR         => 'root <root@(none)>') : ()),
+);

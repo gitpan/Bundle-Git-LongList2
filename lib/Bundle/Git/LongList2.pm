@@ -1,7 +1,7 @@
 package Bundle::Git::LongList2;
 
 use 5.005;
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 1;
 
@@ -293,7 +293,7 @@ Test::Warnings
 
 Test::Object
 
-File::Remov
+File::Remove
 
 Data::Alias
 
@@ -759,7 +759,7 @@ Git::SVNReplay
 
 =head1 AUTHOR
 
-Version 0.02 Kevin W. Henwood, <Khen1950fx@yahoo.com>
+Version 0.03 Kevin W. Henwood, <Khen1950fx@yahoo.com>
 
 =head1 COPYRIGHT AND LICENSE
 
